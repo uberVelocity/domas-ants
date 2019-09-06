@@ -6,6 +6,11 @@ namespace agents
         private double _speed;
         private int _age;
 
+        public Agent()
+        {
+            
+        }
+
         public Agent(double speed, int age) 
         {
             this._age = age;

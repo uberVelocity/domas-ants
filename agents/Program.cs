@@ -6,7 +6,10 @@ namespace agents
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Agent topolska = new Agent();
+            Console.WriteLine("The age of the agent is " + topolska.Age);
+            topolska.Age = 22;
+            Console.WriteLine("Now his age is: " + topolska.Age);
         }
     }
 }

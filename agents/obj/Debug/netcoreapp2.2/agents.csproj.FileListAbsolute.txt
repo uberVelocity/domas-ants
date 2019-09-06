@@ -1,0 +1,11 @@
+/home/merkel/Documents/University/c-sharp-projects/agents/bin/Debug/netcoreapp2.2/agents.deps.json
+/home/merkel/Documents/University/c-sharp-projects/agents/bin/Debug/netcoreapp2.2/agents.runtimeconfig.json
+/home/merkel/Documents/University/c-sharp-projects/agents/bin/Debug/netcoreapp2.2/agents.runtimeconfig.dev.json
+/home/merkel/Documents/University/c-sharp-projects/agents/bin/Debug/netcoreapp2.2/agents.dll
+/home/merkel/Documents/University/c-sharp-projects/agents/bin/Debug/netcoreapp2.2/agents.pdb
+/home/merkel/Documents/University/c-sharp-projects/agents/obj/Debug/netcoreapp2.2/agents.csprojAssemblyReference.cache
+/home/merkel/Documents/University/c-sharp-projects/agents/obj/Debug/netcoreapp2.2/agents.csproj.CoreCompileInputs.cache
+/home/merkel/Documents/University/c-sharp-projects/agents/obj/Debug/netcoreapp2.2/agents.AssemblyInfoInputs.cache
+/home/merkel/Documents/University/c-sharp-projects/agents/obj/Debug/netcoreapp2.2/agents.AssemblyInfo.cs
+/home/merkel/Documents/University/c-sharp-projects/agents/obj/Debug/netcoreapp2.2/agents.dll
+/home/merkel/Documents/University/c-sharp-projects/agents/obj/Debug/netcoreapp2.2/agents.pdb
