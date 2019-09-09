@@ -1,4 +1,4 @@
-namespace agents.model
+namespace agents.model.agents
 {
     public abstract class Agent:IAgent
     {
@@ -11,6 +11,12 @@ namespace agents.model
         ~Agent() 
         {
             System.Console.WriteLine("Deconstructing agents");
+        }
+
+        // Basic feed function 
+        public void Feed(Food resource) {
+            this.Energy += resource.Energy;
+            // Here, the food item should be destroyed after consumed.
         }
 
         public void Move()

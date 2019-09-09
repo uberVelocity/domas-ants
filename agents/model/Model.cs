@@ -1,13 +1,17 @@
 using System.Collections.Generic;
+using agents.model.agents;
+using agents.model.environment;
 
 namespace agents.model
 {
     public sealed class Model
     {
         private List<Agent> _agents;
+        private Map map;
 
-        public Model() {
-
+        public Model(int mapSize) {
+            // Initialize agents
+            this.map = new Map(mapSize);
         }
 
         public List<Agent> Agents

@@ -1,4 +1,4 @@
-namespace agents.model
+namespace agents.model.agents
 {
     public class Worker:Agent
     {
@@ -29,11 +29,6 @@ namespace agents.model
             this.Speed = speed;
             this.Age = age;
             this.Name = name;
-        }
-
-        public void getDigRate()
-        {
-            System.Console.WriteLine("I am digging with " + _digRate + " power!");
         }
 
         public double DigRate
