@@ -7,11 +7,12 @@ namespace agents.model
     public sealed class Model
     {
         private List<Agent> _agents;
-        private Map map;
+        private List<MapObject> _mapObjects;
+        private Map _map;
 
         public Model(int mapSize) {
             // Initialize agents
-            this.map = new Map(mapSize);
+            this._map = new Map(mapSize);
         }
 
         public List<Agent> Agents
@@ -23,6 +24,30 @@ namespace agents.model
             set
             {
                 this._agents = value;
+            }
+        }
+
+        public Map Map
+        {
+            get
+            {
+                return this._map;
+            }
+            set
+            {
+                this._map = value;
+            }
+        }
+
+        public List<MapObject> MapObjects
+        {
+            get
+            {
+                return this._mapObjects;
+            }
+            set
+            {
+                this._mapObjects = value;
             }
         }
 

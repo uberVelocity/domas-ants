@@ -10,7 +10,6 @@ namespace agents
     {
         static void Main(string[] args)
         {
-            
             int mapSize = GetMapInput();
             Debug.Assert(mapSize != 0);
 

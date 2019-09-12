@@ -1,4 +1,5 @@
 using agents.model;
+using agents.model.items;
 
 namespace agents.model.agents
 {

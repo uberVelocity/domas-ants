@@ -1,4 +1,4 @@
-namespace agents.model.agents
+namespace agents.model.items
 {
     public class Food
     {

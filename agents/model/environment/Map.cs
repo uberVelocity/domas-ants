@@ -5,22 +5,49 @@ namespace agents.model.environment
 {
     public class Map
     {
-        private Agent[, ] _gridMap;
+        private MapObject[, ] _gridMap;  // Currently the 'Map' is a 2D MapObject array
+        private int _size;
 
         public Map() {}
 
+        // Blank MapObject array constructor
         public Map(int size)
         {
-            this._gridMap = new Agent[size, size];
-            for (int i = 0; i < size; i++) {
-                for (int j = 0; j < size; j++) {
-                    this._gridMap[i, j] = new BlankAgent();
-                    Debug.Assert(this._gridMap[i, j].GetType() == typeof(BlankAgent));
+            InitializeMap();
+        }
+
+        // Prints the current state of the map
+        public void PrintMap()
+        {
+
+        }
+
+        private void InitializeMap() {
+            // Initialize 2D Agent array
+            this._gridMap = new MapObject[this._size, this._size];
+            for (int i = 0; i < this._size; i++) 
+            {
+                for (int j = 0; j < this._size; j++) 
+                {
+                    this._gridMap[i, j] = new MapObject();
+                    Debug.Assert(this._gridMap[i, j].GetType() == typeof(MapObject));
                 }
             }
         }
 
-        public Agent[,] GridMap
+        public int Size
+        {
+            get
+            {
+                return this._size;
+            }
+            set
+            {
+                this._size = value;
+            }
+        }
+
+        public MapObject[,] GridMap
         {
             get
             {

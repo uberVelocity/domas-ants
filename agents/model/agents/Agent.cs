@@ -1,6 +1,9 @@
+using agents.model.items;
+using agents.model.agents;
+
 namespace agents.model.agents
 {
-    public abstract class Agent:IAgent
+    public abstract class Agent:MapObject,IAgent
     {
         private int _id;
         private int _age;
@@ -10,7 +13,7 @@ namespace agents.model.agents
 
         ~Agent() 
         {
-            System.Console.WriteLine("Deconstructing agents");
+            System.Console.WriteLine("Deconstructing agent " + this);
         }
 
         // Basic feed function 
@@ -83,5 +86,13 @@ namespace agents.model.agents
                 this._age = value;
             }
         }
+
+        // public static string Mapping(Agent agent)
+        // {
+        //     string type = agent.GetType().ToString();
+        //     switch(type)
+        //     {
+        //     }
+        // }
     }
 }
