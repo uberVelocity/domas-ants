@@ -13,21 +13,28 @@ namespace agents.model.environment
         // Blank MapObject array constructor
         public Map(int size)
         {
+            this._size = size;
             InitializeMap();
+            PrintMap();
         }
 
         // Prints the current state of the map
         public void PrintMap()
         {
-
+            for (int i = 0; i < _size; i++) {
+                for (int j = 0; j < _size; j++) {
+                    Renderer.RenderObject(_gridMap[i, j]);
+                }
+                System.Console.WriteLine();
+            }
         }
 
         private void InitializeMap() {
             // Initialize 2D Agent array
-            this._gridMap = new MapObject[this._size, this._size];
-            for (int i = 0; i < this._size; i++) 
+            this._gridMap = new MapObject[_size, _size];
+            for (int i = 0; i < _size; i++) 
             {
-                for (int j = 0; j < this._size; j++) 
+                for (int j = 0; j < _size; j++) 
                 {
                     this._gridMap[i, j] = new MapObject();
                     Debug.Assert(this._gridMap[i, j].GetType() == typeof(MapObject));

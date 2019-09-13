@@ -13,6 +13,7 @@ namespace agents.model
         public Model(int mapSize) {
             // Initialize agents
             this._map = new Map(mapSize);
+            
         }
 
         public List<Agent> Agents
